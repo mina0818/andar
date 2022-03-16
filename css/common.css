@@ -1,0 +1,151 @@
+
+@font-face {
+    font-family: 'gilroy';
+    src: url(../font/Gilroy-Regular.woff2) format('woff2');
+    font-weight: 400;
+  }
+@font-face {
+    font-family: 'gilroy';
+    src: url(../font/Gilroy-Medium.woff2) format('woff2');
+    font-weight: 500;
+  }
+@font-face {
+    font-family: 'gilroy';
+    src: url(../font/Gilroy-Bold.woff2) format('woff2');
+    font-weight: 700;
+  }
+
+
+@font-face {
+    font-family: 'noto';
+    src: url(../font/NotoSansKR-Light-Hestia.woff) format('woff');
+    font-weight: 300;
+  }
+@font-face {
+    font-family: 'noto';
+    src: url(../font/NotoSansKR-Regular-Hestia.woff) format('woff');
+    font-weight: 400;
+  }
+@font-face {
+    font-family: 'noto';
+    src: url(../font/NotoSansKR-Medium-Hestia.woff) format('woff');
+    font-weight: 500;
+  }
+@font-face {
+    font-family: 'noto';
+    src: url(../font/NotoSansKR-Bold-Hestia.woff) format('woff');
+    font-weight: 700;
+  }
+
+.blind{
+    position: absolute;
+    width: 1px; height: 1px;
+    overflow: hidden;
+    margin: -1px;
+    clip: rect(0 0 0 0);
+}
+
+
+.hidden{
+    overflow: hidden;
+}
+
+
+
+/* prd */
+.prd_item{}
+
+.prd_item .img_box{
+    position: relative;
+    width: 100%;
+
+}
+.prd_item .img_box a{}
+.prd_item .img_box a img{width: 100%;}/* width 로 줘야함! */
+.prd_item .img_box a .tag_new{position: absolute; top: 0; right: 0; width: 18%;}
+.prd_item .img_box a .tag{position: absolute; top: 0; right: 0; width: 18%;}
+
+.prd_item .txt_box{
+    /* padding: 0 28px */
+    padding: 15px 10px 0px
+    
+}
+.prd_item .txt_box .review{
+    display: block;
+    width: 100%;
+    font-size: 13px;
+    line-height: 13px;
+    font-weight: 600;
+    color: #8e1f29;
+}
+.prd_item .txt_box .name{
+    width: 100%;
+    padding: 10px 0;
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: 400;
+    letter-spacing: -0.05em;
+}
+.prd_item .txt_box .price_box{}
+.prd_item .txt_box .price_box strong{
+    color: #8e1f29;
+    font-weight: 500;
+    margin-right: 5px;
+    vertical-align: top;
+}
+.prd_item .txt_box .price_box em{
+    font-size: 15px;
+    line-height: 16px;
+    font-weight: 500;
+    letter-spacing: -0.03em;
+
+}
+.prd_item .txt_box .price_box .line{
+    font-size: 13px;
+    line-height: 18px;
+    font-weight: 400;
+    letter-spacing: -0.03em;
+    color: #8d8d8d;
+    margin-left: 5px;
+    display: inline-block;
+    text-decoration: line-through;
+}
+.prd_item .txt_box .color{
+    color: #999;
+    line-height: 11px;
+    letter-spacing: -0.05em;
+    font-weight: 500;
+    padding-top: 9px;
+}
+
+.prd_item .txt_box .cupon_box{
+    display: inline-block;
+    border: 1px solid rgba(142, 31, 41, 0.5);
+    padding: 5px 6px;
+    margin-top: 10px;
+    min-width: 135px; /* 이 방법 말고 다른거... */
+}
+.prd_item .txt_box .cupon_box a{
+    font-size: 9px;
+    line-height: 9px;
+    color: #8e1f29;
+    letter-spacing: -0.05em;
+}
+.prd_item .txt_box .cupon_box a span{font-weight: 700;}
+
+
+/* prd_item01 */
+
+.prd_item01{padding: 0 16px;}
+.prd_item01 .cont{display: flex; padding: 20px 0; border-bottom: 1px solid #eee;}
+.prd_item01 .cont:last-child{border-bottom: 0;}
+/* .prd_item01 .img_box{width: 110px; flex-shrink: 0;} */
+.prd_item01 .img_box{flex: 0 0 110px;} /* 자식한테만 쓸수 있다 그로우 쉬링크 베이시스 순서 */
+.prd_item01 .txt_box{
+    /* flex-grow: 1; */
+    flex: 1;
+    padding: 0 28px; 
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}

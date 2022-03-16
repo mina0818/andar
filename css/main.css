@@ -1,0 +1,363 @@
+/* img{width: 100%;} */
+
+
+.main_banner{
+    height: calc(100vh - 100px);
+    /* background: #ff0; */
+}
+.main_banner .main_slider{
+    height: 100%;
+}
+.main_banner .main_slider .swiper-wrapper{}
+.main_banner .main_slider .swiper-wrapper .swiper-slide{
+    position: relative;
+}
+.main_banner .main_slider .swiper-wrapper .swiper-slide a{}
+.main_banner .main_slider .swiper-wrapper .swiper-slide a img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.main_banner .main_slider .swiper-wrapper .swiper-slide a .txt_area{
+    position: absolute;
+    bottom: 0;
+    display: inline-block;
+    width: 100%;
+    height: auto;
+    padding: 20% 7.5%;
+    color: #fff;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 1.25;
+    letter-spacing: -1.3px;
+    z-index: 1; /* 그와이퍼의 제트인덱스 때문에 안보일수 있으니... 준다 */
+}
+.main_banner .main_slider .swiper-wrapper .swiper-slide a .txt_area .top_txt{
+    font-weight: 700;
+}
+.main_banner .main_slider .swiper-wrapper .swiper-slide a .txt_area .bottom_txt{
+    font-size: 17px;
+    line-height: 1.4;
+    letter-spacing: -0.5;
+    padding-top: 15px;
+}
+
+.main_banner .main_slider .swiper-pagination{
+    bottom: 37px;
+}
+.main_banner .main_slider .swiper-pagination-bullet{
+    width: 20px;
+    height: 2px;
+    border-radius: 0;
+    background: #fff;
+    margin: 0 !important;
+    /* opacity: 0.3; */
+    /* padding: 0; */
+}
+
+
+/* main_cont_list */
+.main_cont_list{}
+.main_cont_list .wrap{}
+.main_cont_list .wrap .title{
+    padding: 50px 16px 22px;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 29px;
+}
+.main_cont_list .wrap .list_cate{}
+.main_cont_list .wrap .list_cate ul{
+    overflow: hidden;
+    display: flex;
+    flex-wrap: wrap;
+}
+.main_cont_list .wrap .list_cate ul li{
+    float: left;
+    width: 50%;
+    padding-right: 1.11%;
+    padding-bottom: 50px;
+}
+.main_cont_list .wrap .list_cate ul li:nth-child(2n){
+    padding-left: 1.11%;
+    padding-right: 0;
+}
+.main_cont_list .wrap .list_cate ul li{}
+
+.main_cont_list .wrap .more_btn{
+    padding: 0 30px;
+    margin: 0 auto;
+    margin-bottom: 65px;
+}
+.main_cont_list .wrap .more_btn a{
+    display: block;
+    width: 100%;
+    height: 52px;
+    line-height: 52px;
+    border: 1px solid #e0e0e0;
+    background: #fff;
+    font-size: 15px;
+    color: #222;
+    font-weight: 500;
+    text-align: center;
+}
+.main_cont_list .wrap .more_btn a .arrow{
+    display: inline-block;
+    vertical-align: text-bottom;
+    padding-left: 5px;
+    width: 19px; height: 19px;
+    background: url(../images/go_cate.png)no-repeat;
+    background-size: 19px auto;
+    background-position: center;
+}
+
+/* mini_banner */
+.mini_banner{margin-bottom: 20px;}
+.mini_banner a img{width: 100%;}
+
+
+/* board_list */
+.board_list{}
+.board_list .group_title{}
+.board_list .group_title .img_box{}
+.board_list .group_title .img_box a img{width: 100%;}
+.board_list .group_title .inner{
+}
+.board_list .group_title .txt_box{
+    padding: 20px 16px 20px;
+}
+.board_list .group_title .txt_box h2{
+    font-size: 26px;
+    line-height: 35px;
+    color: #333;
+    letter-spacing: -0.05em;
+    font-weight: 700;
+}
+.board_list .group_title .txt_box > .txt{
+    padding: 14px 0 28px;
+    font-size: 16px;
+    line-height: 26px;
+    letter-spacing: -0.05em;
+    font-weight: 400;
+}
+.board_list .group_title .txt_box .go_btn a{
+    display: inline-block;
+    background-color: #1e1e1e;
+    border-radius: 2px;
+    border: 1px solid #1e1e1e;
+    color: #fff;
+    padding: 8px 47px 8px 18px;
+    line-height: 20px;
+    letter-spacing: -0.03em;
+    font-weight: 500;
+    background-image: url(../images/Icon_move.png);
+    background-repeat: no-repeat;
+    background-size: 15px auto;
+    background-position: calc(100% - 18px) center;
+}
+
+
+
+
+.boaed_wrap2{padding-top: 40px;}
+
+
+
+
+
+/* history_box */
+
+.history_box{
+    padding: 56px 20px;
+    background-color: #c86733;
+    color: #fff;
+}
+.history_box .wrap{}
+.history_box .wrap h2{
+    font-size: 18px;
+    letter-spacing: -0.5px;
+    margin: 0 auto 10px;
+    font-weight: 400;
+    display: inline-block;
+    border-bottom: 1px solid #fff;
+    padding-bottom: 5px;
+    line-height: 1.2;
+}
+.history_box .wrap p{
+    font-size: 30px;
+    line-height: 36px;
+    letter-spacing: -0.03em;
+    font-weight: 700;
+    display: block;
+}
+.history_box .wrap span{
+    display: block;
+    padding: 10px 0 5px;
+    font-size: 12px;
+    line-height: 1.4;
+    letter-spacing: -0.02em;
+    font-weight: 400;
+}
+.history_box .wrap .more_btn{
+    display: inline-block;
+    width: 100px; 
+    margin-top: 20px;
+    padding: 10px 0;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: -0.03em;
+    font-weight: 500;
+    text-align: center;
+    border: 1px solid #fff;
+}
+
+
+
+/* swiper_list_area */
+.swiper_list_area{
+    padding-left: 20px;
+}
+.swiper_list_area .top_box{
+    position: relative;
+
+}
+.swiper_list_area .top_box .title{
+}
+.swiper_list_area .top_box .title h2{
+    display: inline-block;
+    padding: 30px 0;
+    font-size: 20px;
+    line-height: 24px;
+    color: #333;
+    font-weight: 600;
+}
+.swiper_list_area .top_box .more{
+    position: absolute;
+    top: 30px;
+    right: 5%;
+    display: inline-block;
+    padding: 0 5px;
+    font-size: 14px;
+    line-height: 1.5;
+}
+.swiper_list_area .top_box .more .arrow{
+    display: inline-block;
+    width: 15px;
+    height: 11px;
+    margin-left: 3px;
+    margin-bottom: 2px;
+    background-image: url(../images/icon-move-gr.png);
+    background-position: center;
+    background-size: 15px auto;
+    background-repeat: no-repeat;
+    vertical-align: middle;
+}
+
+.swiper_list_area .listSwiper{}
+.swiper_list_area .listSwiper ul{
+    /* display: flex; */
+    width: 100%;
+}
+.swiper_list_area .listSwiper ul li{
+    /* margin-right: 10px; */
+}
+.swiper_list_area .listSwiper ul li .wrap{}
+.swiper_list_area .listSwiper ul li .wrap a img{
+    max-width: 100%;
+}
+.swiper_list_area .listSwiper ul li .wrap {}
+
+.swiper_list_area .listSwiper ul li .wrap  .txt_box{
+    padding: 15px 5% 0;
+}
+.swiper_list_area .listSwiper ul li .wrap .txt_box .review{
+    display: block;
+    width: 100%;
+    font-size: 13px;
+    line-height: 13px;
+    font-weight: 600;
+    color: #8e1f29;
+    margin-top: 16px;
+}
+.swiper_list_area .listSwiper ul li .wrap .txt_box .name{
+    width: 100%;
+    padding: 10px 0;
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: 400;
+    letter-spacing: -0.05em;
+}
+.swiper_list_area .listSwiper ul li .wrap .txt_box .price_box{}
+.swiper_list_area .listSwiper ul li .wrap .txt_box .price_box strong{
+    color: #8e1f29;
+    font-weight: 500;
+    margin-right: 5px;
+    vertical-align: top;
+}
+.swiper_list_area .listSwiper ul li .wrap .txt_box .price_box em{
+    font-size: 15px;
+    line-height: 16px;
+    font-weight: 500;
+    letter-spacing: -0.03em;
+
+}
+.swiper_list_area .listSwiper ul li .wrap .txt_box .price_box .line{
+    font-size: 13px;
+    line-height: 18px;
+    font-weight: 400;
+    letter-spacing: -0.03em;
+    color: #8d8d8d;
+    margin-left: 5px;
+    display: inline-block;
+    text-decoration: line-through;
+}
+.swiper_list_area .listSwiper ul li .wrap .txt_box .color{
+    color: #999;
+    line-height: 11px;
+    letter-spacing: -0.05em;
+    font-weight: 500;
+    padding-top: 9px;
+}
+
+
+
+/* banner_cont */
+.banner_cont{padding-top: 70px;}
+.banner_cont .cont{
+    padding: 65px 20px;
+    background: url(../images/banner-mo1.jpg)no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: block;
+}
+.banner_cont .cont2{
+    padding: 80px 20px 47px;
+    background: url(../images/banner-mo2.jpg)no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: block;
+    margin-top: 10px;
+}
+.banner_cont .cont .txt_box{
+    color: #fff;
+}
+.banner_cont .cont .txt_box h2{
+    font-size: 26px;
+    line-height: 31px;
+    font-weight: 700;
+}
+.banner_cont .cont .txt_box p{
+    font-size: 15px;
+    line-height: 1.4;
+    font-weight: 400;
+    letter-spacing: -0.02em;
+    padding: 15px 0 30px;
+}
+
+.banner_cont .cont .txt_box span{
+    border: 1px solid #fff;
+    padding: 9px 25px 8px;
+    font-size: 15px;
+    line-height: 18px;
+    letter-spacing: -0.03em;
+    display: inline-block;
+}
